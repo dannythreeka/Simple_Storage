@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#B4EEB4"  >
+
+    <Button
+        android:id="@+id/build_new_product_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="上一頁" 
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/build_new_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/build_new_product_back"
+        android:layout_marginTop="35dp"
+        android:text="品名（必填）"
+        android:textSize="50dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/build_new_product_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/build_new_product_name"
+        android:layout_marginTop="30dp"
+        android:text="數量"
+        android:textSize="50dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/build_new_product_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/build_new_product_number"
+        android:layout_marginTop="30dp"
+        android:text="位置"
+        android:textSize="50dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/build_new_product_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/build_new_product_location"
+        android:layout_marginTop="30dp"
+        android:text="備註"
+        android:textSize="50dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/build_new_product_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="確認"
+        android:textSize="40dp"  />
+
+    <EditText
+        android:id="@+id/build_new_product_name_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/build_new_product_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/build_new_product_name"
+        android:layout_toRightOf="@+id/build_new_product_name"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:textSize="40dp"  >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/build_new_product_number_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/build_new_product_number"
+        android:layout_alignTop="@+id/build_new_product_number"
+        android:layout_toRightOf="@+id/build_new_product_number"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/build_new_product_name_type"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:textSize="40dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/build_new_product_location_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/build_new_product_location"
+        android:layout_alignTop="@+id/build_new_product_location"
+        android:layout_toRightOf="@+id/build_new_product_location"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/build_new_product_name_type"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/build_new_product_note_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/build_new_product_note"
+        android:ems="10"
+        android:height="100dp"
+        android:inputType="textMultiLine" 
+        android:textSize="40dp"
+        android:background="@drawable/shape"/>
+
+</RelativeLayout>

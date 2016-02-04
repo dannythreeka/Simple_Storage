@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#87ceeb" >
+
+    <Button
+        android:id="@+id/Buy_main_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="上一頁"
+        android:textSize="40dp"  />
+
+    <Button
+        android:id="@+id/Buy_main_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="新增"
+        android:textSize="40dp"  />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Buy_main_back"
+        android:layout_centerHorizontal="true" 
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape">
+	    <ListView
+	        android:id="@+id/Buy_main_view1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Buy_main_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Buy_main_change"
+        android:layout_alignBottom="@+id/Buy_main_change"
+        android:layout_centerHorizontal="true"
+        android:text="進貨清單"
+        android:textSize="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         />
+
+</RelativeLayout>
+

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#87ceeb" >
+
+    <Button
+        android:id="@+id/Buy_add_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="上一頁"
+        android:textSize="40dp"  />
+
+    <Button
+        android:id="@+id/Buy_add_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="確認"
+        android:textSize="40dp"  />
+
+   
+
+    <RelativeLayout
+        android:id="@+id/Buy_add_relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Buy_add_back" >
+
+        <TextView
+            android:id="@+id/Buy_add_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="日期"
+            android:textSize="40dp" 
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/Buy_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Buy_add_time_text"
+            android:text="項目"
+            android:textSize="40dp" 
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Buy_add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Buy_add_title"
+            android:text="附註"
+            android:textSize="40dp" 
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/Buy_add_title_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/Buy_add_title"
+            android:layout_alignTop="@+id/Buy_add_title"
+            android:layout_toRightOf="@+id/Buy_add_title"
+            android:background="@drawable/shape"
+            android:ems="10" 
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/Buy_add_note_mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Buy_add_note"
+            android:background="@drawable/shape"
+            android:height="200dp"
+            android:inputType="textMultiLine"
+            android:textSize="40dp" />
+        
+        <TextView
+        android:id="@+id/Buy_add_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Buy_add_time_text"
+        android:layout_alignTop="@+id/Buy_add_time_text"
+        android:layout_toRightOf="@+id/Buy_add_time_text"
+        android:layout_marginLeft="10dp"
+        android:textSize="40dp" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Storage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_storage">Storage</string>
+    <string name="title_activity_product">Product</string>
+    <string name="title_activity_product_detail">Product_detail</string>
+
+    <string-array name="addNdelete_option">
+
+
+
+　　                             <item>新增</item>
+
+
+
+　　                             <item>移除</item>
+
+
+
+　　                             <item>取消</item>
+
+
+
+　　 </string-array>
+
+    <string name="title_activity_built__product">Built_Product</string>
+
+    <string-array name="edit_product_option">
+        <item>出貨</item>
+        
+        <item>入庫</item>
+
+　　             
+        		                <item>查看詳細資料</item>
+
+
+
+　　                             <item>修改詳細資料</item>
+        <item>取消</item>
+
+
+
+　　 </string-array>
+
+    <string name="title_activity_buy_main_page">Buy_main_page</string>
+    <string name="title_activity_buy__add_page">Buy_Add_page</string>
+
+</resources>
+
